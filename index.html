@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in JS</title>
+</head>
+<body>
+    <h2>Do you want to know the current date and time?</h2>
+    <p>Please click the Time and Date Button</p>
+
+    <button onclick = "clickhere()">Date & Time</button>
+    <!-- <button onclick = "alert('Click here')">Date & Time</button> -->
+    <p id="date"></p>
+
+    <br>
+    <h2>Hover effect in JavaScript</h2>
+    <button onmousemove="mousemo()">Hover Button</button>
+    <p id="effect"></p>
+    <script>
+        function clickhere(){ 
+            console.log(new Date());
+            console.log(alert('Click here for Date and Time'));
+            document.getElementById("date").innerHTML = new Date();
+        }
+    </script>
+    <script>
+        function mousemo(){
+            document.getElementById("effect").innerHTML = alert("What you want to know the date and time?");
+            document.getElementById("effect").innerHTML = new Date();
+        }
+    </script>
+</body>
+</html>
